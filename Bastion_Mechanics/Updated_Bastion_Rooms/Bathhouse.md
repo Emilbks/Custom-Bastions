@@ -13,7 +13,7 @@
 *Freshly Clean.* After taking a long bath in the bathhouse, you have a +3 to Charisma checks towards anyone who even slightly respects being clean. This effect disappears early if you get sufficiently dirty or bloody as decreed by the DM.
 
 ## Actions
-*Open to the Public.* The bathhouse is opened to the public for the bastion turn. This earns you 2d6 x 50 GP, but you become unable to benefit from the *Freshly Clean* passive. This option requires you to be in or near a settlement of at least 100 people.
+*Open to the Public.* The bathhouse is opened to the public for the bastion turn. This earns you 2d6 x 50 GP, but you become unable to benefit from the *Freshly Clean* perk. This option requires you to be in or near a settlement of at least 100 people.
 
 ## Room Features
 ### Onsen
@@ -92,4 +92,4 @@
 *Improved Water Purification.* The water purification has been improved to the point where *Open to the Public* no longer disables *Freshly Clean*.
 
 #### Action
-*Mass Opening.* The bathhouse is opened to the public for the bastion turn with better marketing, but you become unable to benefit from the *Freshly Clean* passive. To calculate your earnings for this action, use the same dice and GP value as *Open to the Public*, but multiply the number of dice by 2x. This increases to 4x at level 15 and 8x at level 19.
+*Mass Opening.* The bathhouse is opened to the public for the bastion turn with better marketing, but you become unable to benefit from the *Freshly Clean* perk. To calculate your earnings for this action, use the same dice and GP value as *Open to the Public*, but multiply the number of dice by 2x. This increases to 4x at level 15 and 8x at level 19.

@@ -70,10 +70,12 @@ The number of hirelings required to man the room.
 This is also where it's specified if they're housed hirelings and if the room houses them.
 
 ## Perks
-*//SOMETHING ABOUT WHAT PERKS ARE*
+Perks are benefits granted by a room or its features without you having to actively enable them with an action during a bastion turn.
+
+Perks can be anything from passive buffs, synergies with other rooms, or some kind of feature you can use by doing something specific.
 
 ## Actions
-*//SOMETHING ABOUT WHAT ACTIONS ARE*
+Actions are the larger actions that can be done with your bastion rooms. You are generally limited to one action per room each turn. Though some rooms may allow more actions to be used at once.
 
 ## Room Features
 Room features are upgrades to existing rooms. They require a certain amount of built room spaces to be available before they can be constructed.

@@ -2,7 +2,9 @@
 
 public class RoomFeature
 {
-    protected string Name;
+    protected Room Room;
+    
+    protected string FeatureName;
     protected string Effects;
     protected string perks;
     

@@ -1,32 +1,11 @@
-_Level 5 Bastion Facility_
-
-**Prerequisite:** None  
-**Space:** Roomy  
-**Hirelings:** 1  
-**Order:** Harvest
-
-A Bastion can have more than one Garden. Each time you add a Garden to your Bastion, choose its type from the options in the Garden Types table.
-
-While in your Bastion, you can instruct the facility’s hireling to change the Garden from one type to another. This work takes 21 days, during which time no other activity can occur in this facility.
-
-**Harvest: Garden Growth.** When you issue the Harvest order to this facility, you commission the facility’s hireling to collect items from the Garden as noted in the Garden Types table. The work takes 7 days and costs no money.
-
-**Enlarging the Facility.** You can enlarge your Garden to a Vast facility by spending 2,000 GP. A Vast Garden is equivalent to two Roomy Gardens and can include two of the same type of Garden or two different types. When you issue the Harvest order to a Vast Garden, each component garden produces its own harvest. A Vast Garden gains one additional hireling.
-
-| Garden Type  | Description                                                                            | Harvest                                                                                                                                    |
-| ------------ | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Decorative   | Aesthetically pleasing garden full of flowers and topiaries.                           | Ten exquisite floral bouquets (worth 5 GP each), ten vials of Perfume, or ten Candles                                                      |
-| Food         | Garden of delicious mushrooms or vegetables                                            | 100 days worth of Rations                                                                                                                  |
-| Herb         | Garden of rare herbs, some of which have medicinal uses                                | Herbs that are used to create either ten Healer’s Kits or one [Potion of Healing](http://dnd2024.wikidot.com/magic-item:potion-of-healing) |
-| Poi fruitson | Garden stocked with plants and fungi from which poisons and antitoxin can be extracted | Plants that are used to create either two vials of Antitoxin or one vial of Basic Poison                                                   |
 # Garden
 **Type** Harvest
 **Initial Size** 12
-**Max Size** 32
+**Max Size** 48
 **Cost to Build** 500 GP
 **Time to Build** 2 turns
 **Cost to Expand** 50 GP
-**Requirements** None
+**Requirements** 3x3 area for the Vitality Fruit Tree. 
 **Minimum Level** 5
 **Hirelings** 1
 
@@ -35,8 +14,10 @@ While in your Bastion, you can instruct the facility’s hireling to change the 
 *Vitality Fruit Tree.* An especially vital tree grows is your garden, and every day one fruit ripens at dawn. The fruit rots one day after ripening regardless of whether it was plucked or not. The tree will die if replanted elsewhere. Eating the fruit is equal to drinking a Potion of Greater Healing. At level 9 and 13 the tree grows stronger and equals a Potion of Superior Healing and Supreme Healing respectively.
 
 ### Actions
+*Plentiful Harvest.* You can use this action to take any 2 unique Harvest Actions. This increases at level 9/13/17 to 4/6/8 Harvest Actions. Note that some Harvest Actions may specify that they require multiple uses. 
+This action channels the magic of the room into those plants to make them produce. Any plant harvested in this manner last for a bastion turn before they lose their magic and start to rot. 
 
-
+*Harvest: Vitality Fruit Tree.* You harvest three Vitality Tree Fruits. These last a bastion turn.
 ## Room Features
 ### Magical Herb Garden
 **Square Cost** 8
@@ -53,7 +34,7 @@ Synergistic effects
 ##### Action
 
 
-### Invisible Mushroom
+### Invisible Sage
 **Square Cost** 
 **Cost to Build** 
 **Time to Build** 
@@ -99,6 +80,53 @@ Fly effect
 Darkness effect
 
 ### Spore Bomb
+**Square Cost** 4
+**Cost to Build** 
+**Time to Build** 
+**Requirements** None
+**Exclusive With** None
+**Minimum Level** 5
+**Hirelings Added** 
+
+#### Perks
+
+
+#### Action
+Grants the poisoned condition ignoring immunity to it for any creature that isn’t a construct or undead. 
+
+### Blinding Sunflower
+**Square Cost** 
+**Cost to Build** 
+**Time to Build** 
+**Requirements** None
+**Exclusive With** None
+**Minimum Level** 5
+**Hirelings Added** 
+
+#### Perks
+
+
+#### Action
+Blinds anyone who looks in 20 ft. 
+
+### 
+**Square Cost** 
+**Cost to Build** 
+**Time to Build** 
+**Requirements** Beaming Sunflower, which it replaces
+**Exclusive With** None
+**Minimum Level** 19
+**Hirelings Added** 
+
+#### Perks
+
+
+#### Action
+*Harvest: High Energy Sunflower Seeds.* You harvest 5 sunflower seeds that can be thrown up to 60 ft. Every creature in a 30 ft. radius must make a DC 18 CON save or be Blinded for 1 minute. They repeat the save at the end of their turn. This dispels any magical darkness in the area for 1 hour. 
+
+*Harvest (3): Shining Sunflower.* You harvest a special sunflower. When you disconnect the stem from the flower head, a Sunbeam is fired in the direction it faces. 
+
+### Growth Shroom
 **Square Cost** 
 **Cost to Build** 
 **Time to Build** 
@@ -111,4 +139,20 @@ Darkness effect
 
 
 #### Action
-Grants the poisoned condition ignoring immunity to it
+Enlarge
+
+
+### Shrink Shroom
+**Square Cost** 
+**Cost to Build** 
+**Time to Build** 
+**Requirements** None
+**Exclusive With** None
+**Minimum Level** 
+**Hirelings Added** 
+
+#### Perks
+
+
+#### Action
+Reduce

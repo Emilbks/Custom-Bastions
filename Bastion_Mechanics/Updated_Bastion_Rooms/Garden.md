@@ -109,11 +109,11 @@ Grants the poisoned condition ignoring immunity to it for any creature that isnâ
 #### Action
 Blinds anyone who looks in 20 ft. 
 
-### 
+### Beaming Sunflower
 **Square Cost** 
 **Cost to Build** 
 **Time to Build** 
-**Requirements** Beaming Sunflower, which it replaces
+**Requirements** Blinding Sunflower, which it replaces
 **Exclusive With** None
 **Minimum Level** 19
 **Hirelings Added** 
@@ -124,7 +124,7 @@ Blinds anyone who looks in 20 ft.
 #### Action
 *Harvest: High Energy Sunflower Seeds.* You harvest 5 sunflower seeds that can be thrown up to 60 ft. Every creature in a 30 ft. radius must make a DC 18 CON save or be Blinded for 1 minute. They repeat the save at the end of their turn. This dispels any magical darkness in the area for 1 hour. 
 
-*Harvest (3): Shining Sunflower.* You harvest a special sunflower. When you disconnect the stem from the flower head, a Sunbeam is fired in the direction it faces. 
+*Harvest (3): Beaming Sunflower.* You harvest a special sunflower. When you disconnect the stem from the flower head, a Sunbeam is fired in the direction it faces. 
 
 ### Growth Shroom
 **Square Cost** 

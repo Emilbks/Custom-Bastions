@@ -13,12 +13,12 @@ While in your Bastion, you can instruct the facility’s hireling to change the 
 
 **Enlarging the Facility.** You can enlarge your Garden to a Vast facility by spending 2,000 GP. A Vast Garden is equivalent to two Roomy Gardens and can include two of the same type of Garden or two different types. When you issue the Harvest order to a Vast Garden, each component garden produces its own harvest. A Vast Garden gains one additional hireling.
 
-| Garden Type | Description                                                                            | Harvest                                                                                                                                    |
-| ----------- | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Decorative  | Aesthetically pleasing garden full of flowers and topiaries.                           | Ten exquisite floral bouquets (worth 5 GP each), ten vials of Perfume, or ten Candles                                                      |
-| Food        | Garden of delicious mushrooms or vegetables                                            | 100 days worth of Rations                                                                                                                  |
-| Herb        | Garden of rare herbs, some of which have medicinal uses                                | Herbs that are used to create either ten Healer’s Kits or one [Potion of Healing](http://dnd2024.wikidot.com/magic-item:potion-of-healing) |
-| Poison      | Garden stocked with plants and fungi from which poisons and antitoxin can be extracted | Plants that are used to create either two vials of Antitoxin or one vial of Basic Poison                                                   |
+| Garden Type  | Description                                                                            | Harvest                                                                                                                                    |
+| ------------ | -------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Decorative   | Aesthetically pleasing garden full of flowers and topiaries.                           | Ten exquisite floral bouquets (worth 5 GP each), ten vials of Perfume, or ten Candles                                                      |
+| Food         | Garden of delicious mushrooms or vegetables                                            | 100 days worth of Rations                                                                                                                  |
+| Herb         | Garden of rare herbs, some of which have medicinal uses                                | Herbs that are used to create either ten Healer’s Kits or one [Potion of Healing](http://dnd2024.wikidot.com/magic-item:potion-of-healing) |
+| Poi fruitson | Garden stocked with plants and fungi from which poisons and antitoxin can be extracted | Plants that are used to create either two vials of Antitoxin or one vial of Basic Poison                                                   |
 # Garden
 **Type** Harvest
 **Initial Size** 12
@@ -32,23 +32,83 @@ While in your Bastion, you can instruct the facility’s hireling to change the 
 
 ## Effects
 ### Passive
-
+*Vitality Fruit Tree.* An especially vital tree grows is your garden, and every day one fruit ripens at dawn. The fruit rots one day after ripening regardless of whether it was plucked or not. The tree will die if replanted elsewhere. Eating the fruit is equal to drinking a Potion of Greater Healing. At level 9 and 13 the tree grows stronger and equals a Potion of Superior Healing and Supreme Healing respectively.
 
 ### Actions
 
 
 ## Room Features
 ### Magical Herb Garden
-**Square Cost** 
-**Cost to Build** 
-**Time to Build** 
+**Square Cost** 8
+**Cost to Build** 2000 GP
+**Time to Build** 1 week
 **Requirements** 
-**Minimum Level** 
+**Minimum Level** 9
 **Hirelings Added** 
 
 #### Effects
 ##### Perks
-
+Synergistic effects
 
 ##### Action
 
+
+### Invisible Mushroom
+**Square Cost** 
+**Cost to Build** 
+**Time to Build** 
+**Requirements** None
+**Exclusive With** None
+**Minimum Level** 5
+**Hirelings Added** 
+
+#### Perks
+
+
+#### Action
+Invisibility
+
+### Floating Bush
+**Square Cost** 
+**Cost to Build** 
+**Time to Build** 
+**Requirements** None
+**Exclusive With** None
+**Minimum Level** 9
+**Hirelings Added** 
+
+#### Perks
+
+
+#### Action
+Fly effect
+
+### Puff Shroom
+**Square Cost** 
+**Cost to Build** 
+**Time to Build** 
+**Requirements** None
+**Exclusive With** None
+**Minimum Level** 5
+**Hirelings Added** 
+
+#### Perks
+
+
+#### Action
+Darkness effect
+
+### Spore Bomb
+**Square Cost** 
+**Cost to Build** 
+**Time to Build** 
+**Requirements** None
+**Exclusive With** None
+**Minimum Level** 
+**Hirelings Added** 
+
+#### Perks
+
+
+#### Action
+Grants the poisoned condition ignoring immunity to it

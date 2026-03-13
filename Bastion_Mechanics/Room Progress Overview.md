@@ -10,7 +10,7 @@
 | Storehouse         | Not Started | Synergy     |              |          |                | Should be focused on synergies with other rooms |
 | Stable             | Not Started |             |              |          |                |                                                 |
 | Sanctuary          | Not Started |             |              |          |                |                                                 |
-| Hirelings' Lodging | Not Started | Synergy     |              |          |                |                                                 |
+| Hirelings' Lodging | Not Started | Synergy     | 6            | no limit | 1              |                                                 |
 
 # Level 9
 

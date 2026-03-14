@@ -1,54 +1,164 @@
-﻿using CustomBastion;
-using DefaultNamespace;
+﻿using System.Text.Json;
+using static CustomBastion.Shortcuts;
 
-namespace Custom_Bastions;
+namespace CustomBastion;
 
-public class program
+public class Program
 {
-    /// <summary>
-    /// this file need to be here so the .csproj file does not throw an error
-    /// </summary>
+    static Bastion currentBastion = new Bastion();
     public static void Main(string[] args)
     {
-        Console.WriteLine("enter player level");
-        int level = Convert.ToInt32(Console.ReadLine());
-        Console.WriteLine("enter current amount of tiles");
-        int tileAmount = Convert.ToInt32(Console.ReadLine()); 
-        Console.WriteLine("enter tile calc function to use amount of tile write [ta] and to use player level write [l]");
-        string func = Console.ReadLine();
-        if (func != null)
+        if (args.Length > 0)
         {
-            Bastion bs = new Bastion(level, tileAmount, func);
-            while (true)
+            string path = FixBastionPath(args[0]);
+
+            if (File.Exists(path)) LoadSavedBastion(path);
+            else if (args[0].ToLower() == "new") Console.WriteLine("Starting with a new bastion.");
+            else LoadPreviousSave();
+        }
+        else LoadPreviousSave();
+
+        Menu();
+    }
+
+    /// <summary>
+    /// Displays a menu to the user and waits for input. The menu will continue to be displayed until the user enters "exit", "close", "quit", "c", "q", or "x". The user can also enter "help" or "h" to see a list of available commands.
+    /// </summary>
+    public static void Menu()
+    {
+        while (true)
+        {
+            Console.WriteLine("\nAt main menu, enter a command (type 'help' for a list of commands):");
+            switch (ReadInput().ToLower().Trim())
             {
-                Console.WriteLine("funcs now available exit, func, param level [value],param tile [value], eval");
-                string input = Console.ReadLine();
-                if (input == null || input == "exit")
-                {
+                case "exit" or "close" or "quit" or "c" or "q" or "x":
+                    SaveCurrentBastion();
+                    return;
+                case "exit without saving" or "close without saving" or "quit without saving" or "c!" or "q!" or "x!":
+                    return;
+                case "view" or "view current" or "view current bastion" or "v":
+                    ViewCurrentBastion();
                     break;
-                }else if (input.Contains("func"))
-                {
-                    Console.WriteLine("input new function");
-                    func = Console.ReadLine();
-                    if (func != null)
-                    {
-                        bs.ChangeFunction(func);
-                    }
-                }else if (input.Contains("param level"))
-                {
-                    string[] inputs = input.Split(" ");
-                    bs.ChangePlayerLevel(Convert.ToInt32(inputs[2]));
-                    
-                }else if (input.Contains("param tile"))
-                {
-                    string[] inputs = input.Split(" ");
-                    bs.ChangeTileAmount(Convert.ToInt32(inputs[2]));
-                    
-                }else if (input.Contains("eval"))
-                {
-                    bs.GetTilePrice();
-                }
+                case "view saved" or "view saved bastions" or "vsb":
+                    ViewSavedBastions();
+                    break;
+                case "save" or "s":
+                    SaveCurrentBastion();
+                    break;
+                case "load" or "l":
+                    LoadSavedBastion("null", true);
+                    break;
+                case "clear" or "cls":
+                    Console.Clear();
+                    break;
+                case "help" or "h" or "?" or "!":
+                default:
+                    Help();
+                    break;
+                
             }
         }
     }
+
+    public static void Help()
+    {
+        Console.WriteLine("help|h|?|! - shows this message.");
+        Console.WriteLine("exit|close|quit|c|q|x - exits the program and saves all changes.");
+        Console.WriteLine("exit without saving|close without saving|quit without saving|c!|q!|x! - exits the program without saving changes.");
+        Console.WriteLine("view|view current|view current bastion|vcb - views the current bastion.");
+        Console.WriteLine("view saved|view saved bastions|vsb - views all saved bastions.");
+        Console.WriteLine("save|s - saves the current bastion.");
+        Console.WriteLine("load|l - loads a saved bastion.");
+        Console.WriteLine("clear|cls - clears the console.");
+    }
+
+    public static void ViewCurrentBastion()
+    {
+        Console.WriteLine("Current bastion: " + currentBastion.name);
+    }
+
+
+    /// <summary>
+    /// Displays the bastions in data/bastions/ folder and removes the .json extension.
+    /// </summary>
+    public static void ViewSavedBastions()
+    {
+        if (!Directory.Exists("data/bastions"))
+        {
+            Console.WriteLine("No saved bastions found.");
+            return;
+        }
+
+        string[] files = Directory.GetFiles("data/bastions/", "*.json");
+        if (files.Length == 0)
+        {
+            Console.WriteLine("No saved bastions found.");
+            return;
+        }
+
+        Console.WriteLine("Saved bastions:");
+        foreach (string file in files)
+        {
+            Console.WriteLine("- " + Path.GetFileNameWithoutExtension(file));
+        }
+    }
+
+    /// <summary>
+    /// Saves the current bastion to a file in the data/bastions/ folder.
+    /// </summary>
+    public static void SaveCurrentBastion() { currentBastion.SaveBastion(); }
+    public static void LoadSavedBastion(string path, bool userInterface = false)
+    {
+        if (userInterface)
+        {
+            Console.WriteLine("Enter the name of the bastion you want to load, write 'c' to exit:");
+            do
+            {
+                string input = ReadInput();
+                if (input.ToLower() == "c") break;
+                
+                string filename = string.Join("_", input.Trim().Split());
+                if (filename.Length == 0) filename = "Unnamed Bastion";
+
+                filename = "data/bastions/" + filename + ".json";
+
+                if (File.Exists(filename))
+                {
+                    LoadSavedBastion(filename);
+                    break;
+                }
+                else Console.WriteLine("File not found, try again or write 'c' to exit:");
+            } while (true);
+            return;
+        }
+
+        path = FixBastionPath(path);
+
+        if (File.Exists(path))
+        {
+            string jsonString = File.ReadAllText(path);
+            currentBastion = JsonSerializer.Deserialize<Bastion>(jsonString) ?? new Bastion();
+        }
+    }
+    public static void LoadPreviousSave()
+    {
+        if (File.Exists("data/PreviousBastionPath.txt"))
+        {
+            string path = File.ReadAllText("data/PreviousBastionPath.txt");
+            if (File.Exists(path))
+            {
+                LoadSavedBastion(path);
+            }
+            else
+            {
+                Console.WriteLine("Previous save file not found, starting with a new bastion.");
+                currentBastion = new Bastion();
+            }
+        }
+        else
+        {
+            currentBastion = new Bastion();
+        }
+    }
+
 }

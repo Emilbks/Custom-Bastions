@@ -1,16 +1,16 @@
 # Level 5
 
-| Room               | Progress    | Type        | Initial Size | Max Size | Room Feature # | Note                                            |
-| ------------------ | ----------- | ----------- | ------------ | -------- | -------------- | ----------------------------------------------- |
-| Bedroom            | Finished    | Enhancement | 4            | 9        | 9              |                                                 |
-| Workshop           | Started     | Crafting    |              |          |                |                                                 |
-| Garden             | Not Started | Production  |              |          |                |                                                 |
-| Kitchen            | Not Started | Enhancement |              |          |                |                                                 |
-| Library            | Not Started | Information |              |          |                |                                                 |
-| Storehouse         | Not Started | Synergy     |              |          |                | Should be focused on synergies with other rooms |
-| Stable             | Not Started |             |              |          |                |                                                 |
-| Sanctuary          | Not Started |             |              |          |                |                                                 |
-| Hirelings' Lodging | Not Started | Synergy     | 6            | no limit | 1              |                                                 |
+| Room               | Progress    | Type               | Initial Size | Max Size | Room Feature # | Note                                            |
+| ------------------ | ----------- | ------------------ | ------------ | -------- | -------------- | ----------------------------------------------- |
+| Bedroom            | Finished    | Enhancement        | 4            | 9        | 9              |                                                 |
+| Workshop           | Started     | Crafting           |              |          |                |                                                 |
+| Garden             | Not Started | Production         |              |          |                |                                                 |
+| Kitchen            | Not Started | Enhancement/Income |              |          |                |                                                 |
+| Library            | Not Started | Information        |              |          |                |                                                 |
+| Storehouse         | Not Started | Synergy            |              |          |                | Should be focused on synergies with other rooms |
+| Stable             | Not Started |                    |              |          |                |                                                 |
+| Sanctuary          | Not Started |                    |              |          |                |                                                 |
+| Hirelings' Lodging | Not Started | Synergy            | 6            | no limit | 1              |                                                 |
 
 # Level 9
 
@@ -21,6 +21,7 @@
 | Alchemy Lab              | Not Started | Crafting/Production |              |          |                | Intended for potions                                              |
 | Scriptorium              | Not Started | Crafting/Production |              |          |                | Intended for scrolls                                              |
 | Builders' Hall           | Not Started | Building            |              |          |                | Allow for faster expansion                                        |
+| Brewer's Hall            | Not Started | Production/Income   |              |          |                |                                                                   |
 | Tavern                   | Not Started | Income              |              |          |                |                                                                   |
 | Teleportation Circle Hub | Not Started | Exploration         |              |          |                |                                                                   |
 | Trophy Room              | Not Started | Income              |              |          |                |                                                                   |

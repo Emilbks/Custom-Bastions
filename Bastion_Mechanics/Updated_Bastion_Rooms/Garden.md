@@ -137,63 +137,18 @@ Enlarge
 #### Action
 Reduce
 
-### Great Oak of the Hills
+
+### Concentrated Coffee Bush
 **Square Cost** 
 **Cost to Build** 
 **Time to Build** 
 **Requirements** None
 **Exclusive With** None
-**Minimum Level** 13
+**Minimum Level** 
 **Hirelings Added** 
 
-#### Action
-Increases STR to 21 or by 2 if it's already at 21 or higher.
+#### Perks
 
-### Drunken Reeds
-**Square Cost** 
-**Cost to Build** 
-**Time to Build** 
-**Requirements** None
-**Exclusive With** None
-**Minimum Level** 13
-**Hirelings Added** 
 
 #### Action
-Increases DEX to 21 or by 2 if it's already at 21 or higher.
-
-### Iridescent Iris
-**Square Cost** 
-**Cost to Build** 
-**Time to Build** 
-**Requirements** None
-**Exclusive With** None
-**Minimum Level** 13
-**Hirelings Added** 
-
-#### Action
-Increases INT to 21 or by 2 if it's already at 21 or higher.
-
-### Calming Lotus
-**Square Cost** 
-**Cost to Build** 
-**Time to Build** 
-**Requirements** None
-**Exclusive With** None
-**Minimum Level** 13
-**Hirelings Added** 
-
-#### Action
-Increases WIS to 21 or by 2 if it's already at 21 or higher.
-
-### Rose of Hidden Thorns
-**Square Cost** 
-**Cost to Build** 
-**Time to Build** 
-**Requirements** None
-**Exclusive With** None
-**Minimum Level** 13
-**Hirelings Added** 
-
-#### Action
-Increases CHA to 21 or by 2 if it's already at 21 or higher.
 

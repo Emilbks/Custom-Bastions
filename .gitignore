@@ -11,6 +11,10 @@
 *.sln.docstates
 *.env
 .obsidian
+.vscode/
+
+# Custom git ignore for Bastions
+Custom-Bastions/data/*
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs
@@ -417,3 +421,4 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+

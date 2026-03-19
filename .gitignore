@@ -10,6 +10,7 @@
 *.userosscache
 *.sln.docstates
 *.env
+.obsidian
 .vscode/
 
 # Custom git ignore for Bastions

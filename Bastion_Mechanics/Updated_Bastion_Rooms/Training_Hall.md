@@ -1,4 +1,4 @@
-# 
+# Training Hall
 **Type** 
 **Initial Size** 
 **Max Size** 

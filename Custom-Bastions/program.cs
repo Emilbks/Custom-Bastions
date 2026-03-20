@@ -32,18 +32,21 @@ public class Program
             switch (ReadInput().ToLower().Trim())
             {
                 case "exit" or "close" or "quit" or "c" or "q" or "x":
-                    SaveCurrentBastion();
+                    SaveBastion();
                     return;
                 case "exit without saving" or "close without saving" or "quit without saving" or "c!" or "q!" or "x!":
                     return;
-                case "view" or "view current" or "view current bastion" or "v":
-                    ViewCurrentBastion();
+                case "view" or "view bastion" or "vb":
+                    ViewBastion();
+                    break;
+                case "display" or "display bastion" or "db":
+                    DisplayBastion();
                     break;
                 case "view saved" or "view saved bastions" or "vsb":
                     ViewSavedBastions();
                     break;
                 case "save" or "s":
-                    SaveCurrentBastion();
+                    SaveBastion();
                     break;
                 case "load" or "l":
                     LoadSavedBastion("null", true);
@@ -65,14 +68,15 @@ public class Program
         Console.WriteLine("help|h|?|! - shows this message.");
         Console.WriteLine("exit|close|quit|c|q|x - exits the program and saves all changes.");
         Console.WriteLine("exit without saving|close without saving|quit without saving|c!|q!|x! - exits the program without saving changes.");
-        Console.WriteLine("view|view current|view current bastion|vcb - views the current bastion.");
+        Console.WriteLine("view|view bastion|vb - views the information of the current bastion.");
+        Console.WriteLine("display|display bastion|db - displays the layout of the current bastion.");
         Console.WriteLine("view saved|view saved bastions|vsb - views all saved bastions.");
         Console.WriteLine("save|s - saves the current bastion.");
         Console.WriteLine("load|l - loads a saved bastion.");
         Console.WriteLine("clear|cls - clears the console.");
     }
 
-    public static void ViewCurrentBastion()
+    public static void ViewBastion()
     {
         Console.WriteLine("Current bastion: " + currentBastion.name);
     }
@@ -106,7 +110,7 @@ public class Program
     /// <summary>
     /// Saves the current bastion to a file in the data/bastions/ folder.
     /// </summary>
-    public static void SaveCurrentBastion() { currentBastion.SaveBastion(); }
+    public static void SaveBastion() { currentBastion.SaveBastion(); }
     public static void LoadSavedBastion(string path, bool userInterface = false)
     {
         if (userInterface)
@@ -159,6 +163,18 @@ public class Program
         {
             currentBastion = new Bastion();
         }
+    }
+
+    public static void DisplayBastion()
+    {
+        Console.WriteLine($"Type what floor do you want to see (1-{currentBastion.layout.GetLength(0)})?");
+        int f = ReadInt();
+        if (0 > f || f > currentBastion.layout.GetLength(0))
+        {
+            System.Console.WriteLine("Invalid input, going back to main menu.");
+            return;
+        }
+        currentBastion.DisplayBastionFloor(f - 1);
     }
 
 }

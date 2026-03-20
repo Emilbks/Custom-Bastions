@@ -2,40 +2,40 @@
 
 public abstract class RoomFeature : IPrintable, IPrintableInline
 {
-    protected Room room;
+    public Room room { get; protected set; }
     
-    protected string name;
-    protected string shorthand;
-    protected string description;
-    protected string effects;
-    protected string perks;
+    public string name { get; protected set; }
+    public string shorthand { get; protected set; }
+    public string description { get; protected set; }
+    public string effects { get; protected set; }
+    public string perks { get; protected set; }
     
     //Cost for feature
-    protected int squareCost;
-    protected int GPCost;
-    protected int turnsToBuild;
-    protected string requirements;
-    protected int minLevel;
-    protected int hirelingsAdded;
-    private ConsoleColor textColor;
-    private ConsoleColor backgroundColor;
+    public int squareCost { get; protected set; }
+    public int GPCost { get; protected set; }
+    public int turnsToBuild { get; protected set; }
+    public string requirements { get; protected set; }
+    public int minLevel { get; protected set; }
+    public int hirelingsAdded { get; protected set; }
+    public ConsoleColor textColor { get; protected set; }
+    public ConsoleColor backgroundColor { get; protected set; }
 
-    public RoomFeature(Room room, string featureName, string shorthand, string description, string effects, string perks, int squareCost, int gpCost, int turnsToBuild, string requirements, int minLevel, int hirelingsAdded, ConsoleColor textColor = ConsoleColor.White, ConsoleColor backgroundColor = ConsoleColor.Black)
+    public RoomFeature()
     {
-        this.room = room;
-        name = featureName;
-        this.shorthand = shorthand;
-        this.description = description;
-        this.effects = effects;
-        this.perks = perks;
-        this.textColor = textColor;
-        this.backgroundColor = backgroundColor;
-        this.squareCost = squareCost;
-        GPCost = gpCost;
-        this.turnsToBuild = turnsToBuild;
-        this.requirements = requirements;
-        this.minLevel = minLevel;
-        this.hirelingsAdded = hirelingsAdded;
+        room = new NoRoom();
+        name = "";
+        shorthand = "";
+        description = "";
+        effects = "";
+        perks = "";
+        textColor = room.textColor;
+        backgroundColor = room.backgroundColor;
+        squareCost = 0;
+        GPCost = 0;
+        turnsToBuild = 1;
+        requirements = "None";
+        minLevel = 5;
+        hirelingsAdded = 0;
     }
 
     public abstract void Print();

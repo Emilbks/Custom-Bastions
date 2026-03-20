@@ -1,5 +1,6 @@
 ﻿using DefaultNamespace;
 using System.IO.Enumeration;
+using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks.Dataflow;
 using static CustomBastion.Shortcuts;
@@ -27,8 +28,8 @@ public class Bastion
     public Bastion()
     {
         name = "Unnamed Bastion";
-        this.playerLevel = 1;
-        this.tileAmount = 0;
+        playerLevel = 1;
+        tileAmount = 0;
         Rooms = new List<Room>();
         pc = new PriceCalculator("1+1", this); // Needs fixing
         layout = new Square[1, 10, 10];
@@ -43,6 +44,12 @@ public class Bastion
                 }
             }
         }
+
+        //TODO: Something with initial size
+        xLowerBounds[0] = 3;
+        xUpperBounds[0] = 7;
+        yLowerBounds[0] = 3;
+        yUpperBounds[0] = 6;
     }
 
     public void ChangeFunction(string newfunc)
@@ -67,6 +74,43 @@ public class Bastion
         pc.eval();
     }
     
+    public void DisplayBastionFloor(int f)
+    {
+        
+        Console.Write("    +");
+        for (int i = 0; i <= xUpperBounds[f] - xLowerBounds[f]; i++)
+        {
+            Console.Write("---+");
+        }
+        Console.Write("\r\n");
+
+        for (int i = yUpperBounds[f]; i >= yLowerBounds[f]; i--)
+        {
+            Console.Write($"{i.ToString().PadLeft(3, '0')} |");
+            for (int j = 0; j <= xUpperBounds[f] - xLowerBounds[f]; j++)
+            {
+                layout[f, i, j].PrintInline();
+                Console.Write("|");
+            }
+            Console.Write("\r\n");
+            
+            Console.Write($"    +");
+            for (int j = 0; j <= xUpperBounds[f] - xLowerBounds[f]; j++)
+            {
+                Console.Write("---+");
+            }
+            Console.Write("\r\n");
+            
+        }
+
+        Console.Write("    |");
+        for (int i = 0; i <= xUpperBounds[f] - xLowerBounds[f]; i++)
+        {
+            Console.Write($"{(xLowerBounds[f] + i).ToString().PadLeft(3, '0')}|");
+        }
+        Console.Write("\r\n");
+    }
+
     /// <summary>
     /// Adds a new floor to the bastion. If basement is true, the new floor will be added below the ground floor, otherwise it will be added above as the top floor. The layout of the bastion is updated accordingly, and the groundFloor variable is updated if a basement floor is added. The new floor will be initialized with empty squares.
     /// </summary>

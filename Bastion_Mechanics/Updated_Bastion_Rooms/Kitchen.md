@@ -30,7 +30,7 @@
 
 
 #### Action
-*Concentrated Espresso Shot.* You get your hireling to refine a number of highly concentrated espresso shots. Drinking one of these shots removes one level of exhaustion, but they lose their effectiveness after one bastion turn. Your hireling makes an amount equal to your proficiency bonus.
+*Concentrated Espresso Shot.* You get your hireling to refine a number of highly concentrated espresso shots. Drinking one of these shots takes an action and removes one level of exhaustion, but they lose their effectiveness after one bastion turn. Your hireling makes an amount equal to your proficiency bonus.
 
 ### 
 **Square Cost** 3

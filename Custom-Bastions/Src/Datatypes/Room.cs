@@ -10,27 +10,27 @@ public abstract class Room : IPrintable, IPrintableInline
     protected int MaxSize;
     protected string Requirements;
     protected int MinLevel;
-    protected string HireLings;
+    protected int Hirelings;
     private ConsoleColor TextColor;
     private ConsoleColor BackgroundColor;
     
     protected List<RoomFeature> RoomFeatures;
 
-    protected Room(string name, string shorthand, string description, int initSize, int maxSize, string requirements, int minLevel, string hireLings, ConsoleColor textColor = ConsoleColor.White, ConsoleColor backgroundColor = ConsoleColor.Black)
+    protected Room()
     {
-        this.name = name;
-        this.shorthand = shorthand;
-        this.description = description;
-        InitSize = initSize;
-        MaxSize = maxSize;
-        Requirements = requirements;
-        MinLevel = minLevel;
-        HireLings = hireLings;
+        name = "name";
+        shorthand = "shorthand";
+        description = "description";
+        InitSize = 0;
+        MaxSize = 0;
+        Requirements = "requirements";
+        MinLevel = 5;
+        Hirelings = 0;
         RoomFeatures = new List<RoomFeature>();
-        BuiltSquares = InitSize;
-        UsedSquares = InitSize;
-        TextColor = textColor;
-        BackgroundColor = backgroundColor;
+        BuiltSquares = 0;
+        UsedSquares = 0;
+        TextColor = ConsoleColor.White;
+        BackgroundColor = ConsoleColor.Black;
     }
 
     public abstract void Print();

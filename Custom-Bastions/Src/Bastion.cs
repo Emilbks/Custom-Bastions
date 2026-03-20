@@ -67,6 +67,11 @@ public class Bastion
         pc.eval();
     }
     
+    public void DisplayBastionFloor(int f)
+    {
+        
+    }
+
     /// <summary>
     /// Adds a new floor to the bastion. If basement is true, the new floor will be added below the ground floor, otherwise it will be added above as the top floor. The layout of the bastion is updated accordingly, and the groundFloor variable is updated if a basement floor is added. The new floor will be initialized with empty squares.
     /// </summary>

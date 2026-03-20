@@ -20,22 +20,22 @@ public abstract class RoomFeature : IPrintable, IPrintableInline
     private ConsoleColor textColor;
     private ConsoleColor backgroundColor;
 
-    public RoomFeature(Room room, string featureName, string shorthand, string description, string effects, string perks, int squareCost, int gpCost, int turnsToBuild, string requirements, int minLevel, int hirelingsAdded, ConsoleColor textColor = ConsoleColor.White, ConsoleColor backgroundColor = ConsoleColor.Black)
+    public RoomFeature()
     {
-        this.room = room;
-        name = featureName;
-        this.shorthand = shorthand;
-        this.description = description;
-        this.effects = effects;
-        this.perks = perks;
-        this.textColor = textColor;
-        this.backgroundColor = backgroundColor;
-        this.squareCost = squareCost;
-        GPCost = gpCost;
-        this.turnsToBuild = turnsToBuild;
-        this.requirements = requirements;
-        this.minLevel = minLevel;
-        this.hirelingsAdded = hirelingsAdded;
+        room = new NoRoom();
+        name = "";
+        shorthand = "";
+        description = "";
+        effects = "";
+        perks = "";
+        textColor = ConsoleColor.White;
+        backgroundColor = ConsoleColor.Black;
+        squareCost = 0;
+        GPCost = 0;
+        turnsToBuild = 1;
+        requirements = "None";
+        minLevel = 5;
+        hirelingsAdded = 0;
     }
 
     public abstract void Print();

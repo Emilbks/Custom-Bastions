@@ -169,12 +169,12 @@ public class Program
     {
         Console.WriteLine($"Type what floor do you want to see (1-{currentBastion.layout.GetLength(0)})?");
         int f = ReadInt();
-        if (f > 0 || f > currentBastion.layout.GetLength(0))
+        if (0 > f || f > currentBastion.layout.GetLength(0))
         {
             System.Console.WriteLine("Invalid input, going back to main menu.");
             return;
         }
-        currentBastion.DisplayBastionFloor(f);
+        currentBastion.DisplayBastionFloor(f - 1);
     }
 
 }

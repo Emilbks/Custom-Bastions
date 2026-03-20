@@ -29,4 +29,19 @@ public static class Shortcuts
 
         return path;
     }
+    
+    public static string FixRoomPath(string path)
+    {
+        if (!path.StartsWith("data/rooms/"))
+        {
+            path = "data/rooms/" + path;
+        }
+
+        if (!path.EndsWith(".json"))
+        {
+            path += ".json";
+        }
+
+        return path;
+    }
 }

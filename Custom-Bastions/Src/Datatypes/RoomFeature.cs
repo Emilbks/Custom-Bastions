@@ -7,7 +7,6 @@ public abstract class RoomFeature : IPrintable, IPrintableInline
     protected string name;
     protected string shorthand;
     protected string description;
-    protected string effects;
     protected string perks;
     
     //Cost for feature
@@ -20,13 +19,14 @@ public abstract class RoomFeature : IPrintable, IPrintableInline
     private ConsoleColor textColor;
     private ConsoleColor backgroundColor;
 
-    public RoomFeature(Room room, string featureName, string shorthand, string description, string effects, string perks, int squareCost, int gpCost, int turnsToBuild, string requirements, int minLevel, int hirelingsAdded, ConsoleColor textColor = ConsoleColor.White, ConsoleColor backgroundColor = ConsoleColor.Black)
+    public RoomFeature(Room room, string featureName, string shorthand, string description, string effects, string perks, int squareCost, int gpCost, 
+        int turnsToBuild, string requirements, int minLevel, int hirelingsAdded, ConsoleColor textColor = ConsoleColor.White,
+        ConsoleColor backgroundColor = ConsoleColor.Black)
     {
         this.room = room;
         name = featureName;
         this.shorthand = shorthand;
         this.description = description;
-        this.effects = effects;
         this.perks = perks;
         this.textColor = textColor;
         this.backgroundColor = backgroundColor;
@@ -38,8 +38,8 @@ public abstract class RoomFeature : IPrintable, IPrintableInline
         this.hirelingsAdded = hirelingsAdded;
     }
 
+    public string GetName() { return name; }
     public abstract void Print();
-
     public void PrintInline()
     {
         ConsoleColor oldTextColor = Console.ForegroundColor;
@@ -52,4 +52,7 @@ public abstract class RoomFeature : IPrintable, IPrintableInline
         Console.ForegroundColor = oldTextColor;
         Console.BackgroundColor = oldBackgroundColor;
     }
+
+    public abstract void EditFeature();
+   
 }

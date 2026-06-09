@@ -1,36 +1,36 @@
 ﻿namespace CustomBastion;
 public abstract class Room : IPrintable, IPrintableInline
 {
-    protected string name;
-    protected string shorthand;
-    protected string description;
-    protected int InitSize;
-    protected int BuiltSquares;
-    protected int UsedSquares;
-    protected int MaxSize;
-    protected string Requirements;
-    protected int MinLevel;
-    protected string HireLings;
-    private ConsoleColor TextColor;
-    private ConsoleColor BackgroundColor;
+    public string name { get; protected set; }
+    public string shorthand { get; protected set; }
+    public string description { get; protected set; }
+    public int initSize { get; protected set; }
+    public int builtSquares { get; protected set; }
+    public int usedSquares { get; protected set; }
+    public int maxSize { get; protected set; }
+    public string requirements { get; protected set; }
+    public int minLevel { get; protected set; }
+    public int hirelings { get; protected set; }
+    public ConsoleColor textColor { get; protected set; }
+    public ConsoleColor backgroundColor { get; protected set; }
     
-    protected List<RoomFeature> RoomFeatures;
+    protected List<RoomFeature> roomFeatures;
 
-    protected Room(string name, string shorthand, string description, int initSize, int maxSize, string requirements, int minLevel, string hireLings, ConsoleColor textColor = ConsoleColor.White, ConsoleColor backgroundColor = ConsoleColor.Black)
+    protected Room()
     {
-        this.name = name;
-        this.shorthand = shorthand;
-        this.description = description;
-        InitSize = initSize;
-        MaxSize = maxSize;
-        Requirements = requirements;
-        MinLevel = minLevel;
-        HireLings = hireLings;
-        RoomFeatures = new List<RoomFeature>();
-        BuiltSquares = InitSize;
-        UsedSquares = InitSize;
-        TextColor = textColor;
-        BackgroundColor = backgroundColor;
+        name = "";
+        shorthand = "";
+        description = "";
+        initSize = 0;
+        maxSize = 0;
+        requirements = "";
+        minLevel = 5;
+        hirelings = 0;
+        roomFeatures = new List<RoomFeature>();
+        builtSquares = 0;
+        usedSquares = 0;
+        textColor = ConsoleColor.White;
+        backgroundColor = ConsoleColor.Black;
     }
 
     public abstract void Print();
@@ -40,8 +40,8 @@ public abstract class Room : IPrintable, IPrintableInline
         ConsoleColor oldTextColor = Console.ForegroundColor;
         ConsoleColor oldBackgroundColor = Console.BackgroundColor;
 
-        Console.ForegroundColor = TextColor;
-        Console.BackgroundColor = BackgroundColor;
+        Console.ForegroundColor = textColor;
+        Console.BackgroundColor = backgroundColor;
         Console.Write(shorthand);
 
         Console.ForegroundColor = oldTextColor;

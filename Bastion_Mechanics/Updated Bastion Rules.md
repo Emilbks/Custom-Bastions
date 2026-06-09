@@ -1,8 +1,8 @@
-
-
 # General
 Bastions have a limited amount of space that can be filled with rooms. This space can be expanded over time, but it's slow process.
 Players should generally get bastions at level 5, and they should start with 20 squares and 1-2 rooms, though the DM may wish to change that depending on the game they wish to run. 
+
+Players can keep their bastions separate and spread out across the world; they can be close together or even a single "bastion" that just functions as a number of smaller bastions; or they can use the rules in [[Communal Bastions]] to create truly combined bastions. The latter might be the most useful if the players want a cohesive party experience.
 
 ## Bastion Turns
 Bastion turns typically take 7 days, though your DM may wish to change that. It is during the bastion turns that everything happens, though some actions may span multiple turns.

@@ -6,7 +6,7 @@
 **Time to Build** 
 **Cost to Expand** 
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 
 **Hirelings** 
 

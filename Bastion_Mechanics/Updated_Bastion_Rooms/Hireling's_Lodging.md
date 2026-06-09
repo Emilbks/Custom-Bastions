@@ -6,7 +6,7 @@
 **Time to Build** 1 turn
 **Cost to Expand** 20 GP x current size
 **Requirements** 2x3 square area
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 5
 **Hirelings** 0
 
@@ -22,7 +22,7 @@
 **Cost to Build** 200 GP
 **Time to Build** 1 turn
 **Requirements** 2x3 square area, at least 1 square has to share an edge with another room or outside of the bastion.
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 5
 **Hirelings Added** 0
 

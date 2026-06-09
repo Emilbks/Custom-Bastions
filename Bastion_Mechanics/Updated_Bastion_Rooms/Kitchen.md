@@ -22,7 +22,7 @@
 **Cost to Build** 
 **Time to Build** 
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 7
 **Hirelings Added** 
 
@@ -37,7 +37,7 @@
 **Cost to Build** 
 **Time to Build** 
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 7
 **Hirelings Added** 
 
@@ -52,7 +52,7 @@
 **Cost to Build** 
 **Time to Build** 
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 9
 **Hirelings Added** 
 

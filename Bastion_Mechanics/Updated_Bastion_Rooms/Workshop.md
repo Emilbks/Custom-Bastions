@@ -6,7 +6,7 @@
 **Time to Build** 1 turn
 **Cost to Expand** 100 GP
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 5
 **Hirelings** 1 housed
 
@@ -22,7 +22,7 @@
 **Cost to Build** 
 **Time to Build** 
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 9
 **Hirelings Added** 
 
@@ -36,7 +36,7 @@
 **Cost to Build** 
 **Time to Build** 
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 
 **Hirelings Added** 
 
@@ -50,7 +50,7 @@
 **Cost to Build** 
 **Time to Build** 
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 
 **Hirelings Added** 
 
@@ -64,7 +64,7 @@
 **Cost to Build** 
 **Time to Build** 
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 
 **Hirelings Added** 
 
@@ -78,7 +78,7 @@
 **Cost to Build** 
 **Time to Build** 
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 
 **Hirelings Added** 
 
@@ -92,7 +92,7 @@
 **Cost to Build** 
 **Time to Build** 
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 
 **Hirelings Added** 
 

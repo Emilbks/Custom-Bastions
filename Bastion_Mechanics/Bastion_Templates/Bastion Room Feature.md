@@ -3,7 +3,7 @@
 **Cost to Build** 
 **Time to Build** 
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 
 **Hirelings Added** 
 

@@ -59,8 +59,8 @@ The cost of expanding the room on a per square basis.
 **Requirements** 
 If there is any requirements for the room, be it bastion related, character feature related, or anything else for that matter.
 
-**Exclusive With**
-If there are any rooms or room features in this field, you can only have or build this room if you don't have any of the listed items built.
+**Exclusivity Group**
+If the room or feature has a value in this field, then you can only build it if you have not already built one with the same value.
 
 **Minimum Level** 
 The minimum character level to build this room.

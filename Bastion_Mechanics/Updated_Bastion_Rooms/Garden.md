@@ -36,7 +36,7 @@ This action channels the magic of the room into those plants to make them produc
 **Cost to Build** 1000 GP
 **Time to Build** 1 turn
 **Requirements** 1x3
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 5
 **Hirelings Added** 0
 
@@ -48,7 +48,7 @@ This action channels the magic of the room into those plants to make them produc
 **Cost to Build** 5000 GP
 **Time to Build** 1 turn
 **Requirements** 2x2
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 9
 **Hirelings Added** 0
 
@@ -61,7 +61,7 @@ This action channels the magic of the room into those plants to make them produc
 **Cost to Build** 1000 GP
 **Time to Build** 1 turn
 **Requirements** 1x4
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 5
 **Hirelings Added** 0
 
@@ -74,7 +74,7 @@ This action channels the magic of the room into those plants to make them produc
 **Cost to Build** 2500 GP
 **Time to Build** 2 turns
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 9
 **Hirelings Added** 0
 
@@ -86,7 +86,7 @@ This action channels the magic of the room into those plants to make them produc
 **Cost to Build** 
 **Time to Build** 
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 5
 **Hirelings Added** 
 
@@ -98,7 +98,7 @@ Blinds anyone who looks in 20 ft.
 **Cost to Build** 
 **Time to Build** 
 **Requirements** Blinding Sunflower, which it replaces
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 19
 **Hirelings Added** 
 
@@ -113,7 +113,7 @@ Blinds anyone who looks in 20 ft.
 **Cost to Build** 
 **Time to Build** 
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 
 **Hirelings Added** 
 
@@ -126,7 +126,7 @@ Enlarge
 **Cost to Build** 
 **Time to Build** 
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 
 **Hirelings Added** 
 
@@ -139,7 +139,7 @@ Reduce
 **Cost to Build** 
 **Time to Build** 
 **Requirements** None
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 
 **Hirelings Added** 
 

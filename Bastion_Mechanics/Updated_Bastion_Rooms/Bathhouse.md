@@ -21,7 +21,7 @@
 **Cost to Build** 5000 GP
 **Time to Build** 3 turns
 **Requirements** None
-**Exclusive With** Spa
+**Exclusivity Group** Bath Type
 **Minimum Level** 13
 **Hirelings Added** 1
 
@@ -38,7 +38,7 @@
 **Cost to Build** 5000 GP
 **Time to Build** 3 turns
 **Requirements** None
-**Exclusive With** Onsen
+**Exclusivity Group** Bath Type
 **Minimum Level** 13
 **Hirelings Added** 3
 
@@ -55,7 +55,7 @@
 **Cost to Build** 3000 GP
 **Time to Build** 1 turn
 **Requirements** 1x2 square area
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 11
 **Hirelings Added** 1
 
@@ -70,7 +70,7 @@
 **Cost to Build** 3000 GP
 **Time to Build** 1 turn
 **Requirements** 1x2 square area
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 11
 **Hirelings Added** 1
 
@@ -84,7 +84,7 @@
 **Cost to Build** 5000 GP
 **Time to Build** 1 turn
 **Requirements** 2 1x2 square areas
-**Exclusive With** None
+**Exclusivity Group** None
 **Minimum Level** 11
 **Hirelings Added** 2
 

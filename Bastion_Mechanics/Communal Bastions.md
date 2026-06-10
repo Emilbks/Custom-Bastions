@@ -25,13 +25,3 @@ An example would be with [[Bathhouse]] where `Open to the Public` is a room-wide
 ## Exclusivity
 Every player in the bastion raises the cap on how many rooms or features in an exclusivity group can be built by 1 and this allows for duplicates, though this does not duplicate the effects. A player will only count towards this increase if they qualify for any of the rooms or features in the group. I.e., a full martial character will not increase the cap on a spellcaster exclusive group.
 For example, if there are three players in the bastion, then three features of the `Bedroom Bed` can be built. This does allow for perks to stack in unique ways, but that's what makes communal bastions so special.
-
-# TODO
-- [ ] How large combined bastions are when they start.
-- [ ] How combined bastions expand.
-- [ ] How actions and perks work.
-- [ ] How level requirements work.
-- [ ] How exclusivity groups works, especially when they relate to class features.
-- [ ] What happens when a character leaves the bastion.
-- [ ] What happens when a new character joins the bastion.
-- [ ] How it works when characters are of different levels.
